@@ -1,0 +1,107 @@
+/*
+ Theme Name:     RetroPress
+ Description:    Retro Theme for WordPress
+ Author:         Mark Beech
+ Author URI:     https://mark.beech.org.uk
+ Version:        0.0.1
+*/
+
+body {
+	margin : 0;
+  padding : 0;
+  background-color : #ffffff;
+  color : #000000;
+}
+p, ul, ol, li {
+  font : 10pt Arial,geneva,helvetica;
+}
+h1 {
+  font : bold 14pt Arial, Helvetica, geneva;
+}
+h2, h2 a {
+  font : bold 12pt Arial, Helvetica, geneva;
+    background-color : #ffffff;
+  color : #000000;
+  text-decoration: none;
+}
+#header {
+  position : fixed;
+  width : 100%;
+  height : 10%;
+  top : 0;
+  right : 0;
+  bottom : auto;
+  left : 0;
+  border-bottom : 2px solid #cccccc;
+  text-align:center;
+}
+#leftnavigation {
+    position : fixed;
+    height : auto;
+    top : 10%;
+    left : 0;
+    width : 150px;
+    margin : 0px 0px 0px 10px;
+    color : #000000;
+    padding : 3px;
+    overflow : hidden;
+}
+#content {
+  position : fixed;
+  top : 10%;
+  bottom : 100px;
+  margin : 0px 0px 0px 165px;
+  width : auto;
+  height : auto;
+  padding-left : 5px;
+  padding-right : 12px;
+  color : #000000;
+  border-left : 2px solid #cccccc;
+  overflow : auto;
+    }
+    
+#content h1, #content h2 {
+  color : #000;
+}
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  margin-left : 10px;
+  border-top : 2px solid #cccccc;
+  text-align:center;
+  background-color : #ffffff;
+}
+
+#leftnavigation ul li a{
+	width: 100%;
+	height:2em;
+	margin:1em;
+}
+.entry{
+border-bottom : 2px solid #cccccc;}
+
+#footer a {color : #000000;
+text-decoration:none;}
+  
+  
+@media screen and (max-width: 1000px) 
+ {
+#content {
+  position : fixed;
+  top : 50px;
+  bottom : 50px;
+  margin : 0px;}
+  
+.description, #unne, #leftnavigation{
+   display: none; }
+   
+#footer, #header {
+  height: 50px;
+  }
+   }
+   
+
