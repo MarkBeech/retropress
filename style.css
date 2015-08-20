@@ -1,9 +1,10 @@
 /*
  Theme Name:     RetroPress
+ Theme URI: 	 https://github.com/MarkBeech/retropress
  Description:    Retro Theme for WordPress
  Author:         Mark Beech
  Author URI:     https://mark.beech.org.uk
- Version:        0.0.1
+ Version:        0.0.2
 */
 
 body {
@@ -81,8 +82,10 @@ h2, h2 a {
 	height:2em;
 	margin:1em;
 }
-.entry{
-border-bottom : 2px solid #cccccc;}
+.entry {
+border-top : 2px solid #cccccc;}
+
+.navigation{text-align:center;}
 
 #footer a {color : #000000;
 text-decoration:none;}

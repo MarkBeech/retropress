@@ -22,18 +22,16 @@
 	<?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
-
+<div class="entry">
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 				<h2><?php the_time('Y-m-d') ?> : <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-				<div class="entry">
-					<?php the_content(); ?>		</div>
+				<?php the_content(); ?>		</div>
 				</div>
 
 			<?php endwhile; ?>
 
 		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link() ?></div>
-			<div class="alignright"><?php previous_posts_link() ?></div>
+<?php posts_nav_link(); ?>
 		</div>
 
 	<?php else : ?>
@@ -43,7 +41,7 @@
 </div>
 
 <div id="footer">
-			&copy; <?php echo alpha_and_omega(); ?> <?php echo get_bloginfo('name'); ?><div id="unne"> Powered by <a href="http://wordpress.org/">WordPress</a>, themed by <a href="https://mark.beech.org.uk">Mark Beech</a>.
+			<p>&copy; <?php echo alpha_and_omega(); ?> <?php echo get_bloginfo('name'); ?></p><div id="unne"><p>Powered by <a href="http://wordpress.org/">WordPress</a>, themed by <a href="https://mark.beech.org.uk">Mark Beech</a>.</p>
 	<p><img style="border:0;width:88px;height:31px"
 			src="//jigsaw.w3.org/css-validator/images/vcss-blue"
 			alt="Valid CSS!" />
